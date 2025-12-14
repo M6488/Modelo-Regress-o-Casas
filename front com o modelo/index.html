@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Predição de casas</title>
+</head>
+<body>
+    <header>
+        <img src="header.png" alt="">
+        Lucasas
+    </header>
+
+    <main class="main">
+        <div class="bg-image"></div>
+        <div class="glass"></div>
+
+        <div class="content">
+            <div class="card">
+                <h2>🏠 Estimar Preço 🏠</h2>
+
+                <form id="form-predict">
+                    <label>
+                    Tamanho (m²)
+                    <input type="number" step="0.1" id="tamanho" required />
+                    </label>
+
+                    <label>
+                    Quartos
+                    <input type="number" id="quartos" required />
+                    </label>
+
+                    <label>
+                    Banheiros
+                    <input type="number" id="banheiros" required />
+                    </label>
+
+                    <label>
+                    Ano de construção
+                    <input type="number" id="ano" required />
+                    </label>
+
+                    <button type="submit">Calcular preço</button>
+                </form>
+
+                <div id="resultado"></div>
+            </div>
+
+            <div id="result-card">
+                <h2>Preço da casa</h2>
+                <div id="result">--</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
